@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Магазин Сумок</title>
+  </head>
+  <body>
+    <script src="./script.js"></script>
+    <header>Магазин Сумок</header>
+
+    <nav>
+      <a href="#products">Товары</a>
+      <a href="#contact">Контакты</a>
+    </nav>
+
+    <div id="products" class="container">
+      <div class="item">
+        <img src="bag1.jpg" alt="Сумка 1" />
+        <h2>Сумка "Классика"</h2>
+        <p>Цена: 5000 ₽</p>
+        <button onclick="openModal('Сумка Классика')">Заказать</button>
+      </div>
+      <div class="item">
+        <img src="bag2.jpg" alt="Сумка 2" />
+        <h2>Сумка "Модерн"</h2>
+        <p>Цена: 6500 ₽</p>
+        <button onclick="openModal('Сумка Модерн')">Заказать</button>
+      </div>
+      <div class="item">
+        <img src="bag3.jpg" alt="Сумка 3" />
+        <h2>Сумка "Городской стиль"</h2>
+        <p>Цена: 7000 ₽</p>
+        <button onclick="openModal('Сумка Городской стиль')">Заказать</button>
+      </div>
+    </div>
+
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <h2>Введите информацию для заказа</h2>
+        <label for="phone">Номер телефона:</label>
+        <input type="tel" id="phone" required />
+        <label for="address">Адрес:</label>
+        <input type="text" id="address" required />
+        <label for="payment">Способ оплаты:</label>
+        <input type="text" id="payment" required />
+        <button onclick="submitOrder()">Отправить</button>
+      </div>
+    </div>
+
+    <footer>© 2024 Магазин Сумок</footer>
+
+     
+  </body>
+</html>
